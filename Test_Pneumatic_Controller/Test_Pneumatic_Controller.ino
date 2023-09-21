@@ -11,7 +11,7 @@ int ledPin = 13;
 //A0 is pressure sensor
 //D5 is pump
 
-int desiredValue = 350;
+int desiredValue = 296;
 int tolerance = 2;
 
 void setup() {
@@ -56,6 +56,7 @@ void loop() {
         }
       }
   }
+  Serial.print("pressure: ");
   Serial.println(sensorValue);                         
   // digital value of pressure sensor voltage
   // voltage_mv =  (sensorValue * reference_voltage_mv) / ADCFULLSCALE;
