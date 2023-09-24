@@ -71,6 +71,7 @@ void loop() {
   delay(200);
 }
 
+// The below code is modified from https://swharden.com/blog/2022-11-14-hx710b-arduino/
 int32_t readpressure(int out,int sck){
   // wait for the current reading to finish
   while (digitalRead(out)) {}
